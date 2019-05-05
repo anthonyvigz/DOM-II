@@ -5,7 +5,8 @@
 let header = document.querySelector('h1');
 
 header.addEventListener('mouseover', function(event) {
-    header.style.color = 'dodgerblue';
+    header.style.
+    gcolor = 'dodgerblue';
     header.style.transition = '1s';
     header.style.fontSize = '5em';
 })
@@ -81,4 +82,19 @@ document.addEventListener('keyup', function(event) {
     intro.style.border = '2px dashed grey';
     intro.style.transition = '3s';
     intro.style.padding = '0';
+})
+
+//   copy eventlistener
+
+document.addEventListener('copy', function(event) {
+    alert('You should not copy that!');
+})
+
+//   scroll eventlistener
+
+let body = document.querySelector('body');
+
+document.addEventListener('scroll', function(event) {
+    body.style.transition = '4s';
+    body.style.backgroundColor = 'lightblue';
 })
