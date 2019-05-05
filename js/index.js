@@ -38,3 +38,13 @@ document.addEventListener('click', function(event) {
 //  variable for main text and effect
 
 let paraText = document.querySelectorAll('p');
+
+let parray = Array.from(paraText);
+
+console.log(parray);
+
+parray.forEach(function(element) {
+    element.addEventListener('click', function(event) {
+        event.target.style.fontSize = '3em';
+    })
+})
