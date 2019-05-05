@@ -23,10 +23,18 @@ headerImg.addEventListener('dblclick', function(event) {
 //  variable for navbar and effect
 
 let navBar = document.querySelectorAll('.nav a');
-
-console.log(navBar);
+let navBarArray = Array.from(navBar);
+console.log(navBarArray);
 
 document.addEventListener('click', function(event) {
-    event.target.style.color = 'red';
-    event.target.style.transition = '0.5s';
+    for (let i = 0; i < navBarArray.length; i++) {
+        if (navBarArray[i] === event.target) {
+            event.target.style.color = 'red';
+            event.target.style.color = '0.5s';
+        }
+    }
 })
+
+//  variable for main text and effect
+
+let paraText = document.querySelectorAll('p');
