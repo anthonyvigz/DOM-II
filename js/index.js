@@ -14,10 +14,19 @@ header.addEventListener('mouseover', function(event) {
 
 let headerImg = document.querySelector('.container .intro img');
 
-console.log(headerImg);
-
 headerImg.addEventListener('dblclick', function(event) {
     console.log(event);
     headerImg.style.opacity = '0.5';
     headerImg.style.transition = '1s';
+})
+
+//  variable for navbar and effect
+
+let navBar = document.querySelectorAll('.nav a');
+
+console.log(navBar);
+
+document.addEventListener('click', function(event) {
+    event.target.style.color = 'red';
+    event.target.style.transition = '0.5s';
 })
