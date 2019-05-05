@@ -72,5 +72,13 @@ let intro = document.querySelector('.home .intro');
 document.addEventListener('keydown', function(event) {
     intro.style.border = '5px solid green';
     intro.style.transition = '3s';
-    intro.style.padding = '0px 30px';
+    intro.style.padding = '0px 50px';
+})
+
+//  eventlistener to revert content borders
+
+document.addEventListener('keyup', function(event) {
+    intro.style.border = '2px dashed grey';
+    intro.style.transition = '3s';
+    intro.style.padding = '0';
 })
