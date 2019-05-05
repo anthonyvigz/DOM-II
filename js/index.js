@@ -98,3 +98,23 @@ document.addEventListener('scroll', function(event) {
     body.style.transition = '4s';
     body.style.backgroundColor = 'lightblue';
 })
+
+//   button mouseup and mousedown
+
+let btns = document.querySelectorAll('.btn');
+
+let btnsArray = Array.from(btns);
+
+btnsArray.forEach(function(element) {
+    element.addEventListener('mouseup', function(event) {
+        event.target.textContent = 'Hurry!';
+        event.target.style.transition = '2s'
+    })
+})
+
+btnsArray.forEach(function(element) {
+    element.addEventListener('mousedown', function(event) {
+        event.target.textContent = 'Come on!';
+        event.target.style.transition = '2s'
+    })
+})
