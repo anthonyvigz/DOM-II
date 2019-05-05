@@ -64,3 +64,13 @@ twoHeaders.forEach(function(element) {
     })
 })
 
+
+//  variable for content borders
+
+let intro = document.querySelector('.home .intro');
+
+document.addEventListener('keydown', function(event) {
+    intro.style.border = '5px solid green';
+    intro.style.transition = '3s';
+    intro.style.padding = '0px 30px';
+})
