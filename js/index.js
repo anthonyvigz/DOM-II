@@ -45,6 +45,22 @@ console.log(parray);
 
 parray.forEach(function(element) {
     element.addEventListener('click', function(event) {
-        event.target.style.fontSize = '3em';
+        event.target.style.fontSize = '2.5em';
+        event.target.style.transition = '3s';
     })
 })
+
+
+//  variable for h2s and effect
+
+let twoHeaders = document.querySelectorAll('h2');
+
+let headerArray = Array.from(twoHeaders);
+
+twoHeaders.forEach(function(element) {
+    element.addEventListener('wheel', function(event) {
+        event.target.style.color = 'pink';
+        event.target.style.transition = '2s'
+    })
+})
+
