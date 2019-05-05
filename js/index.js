@@ -25,7 +25,6 @@ headerImg.addEventListener('dblclick', function(event) {
 
 let navBar = document.querySelectorAll('.nav a');
 let navBarArray = Array.from(navBar);
-console.log(navBarArray);
 
 document.addEventListener('click', function(event) {
     for (let i = 0; i < navBarArray.length; i++) {
@@ -34,6 +33,7 @@ document.addEventListener('click', function(event) {
             event.target.style.color = '0.5s';
         }
     }
+    event.preventDefault();
 })
 
 //  variable for main text and effect
@@ -48,6 +48,7 @@ parray.forEach(function(element) {
     element.addEventListener('click', function(event) {
         event.target.style.fontSize = '2.5em';
         event.target.style.transition = '3s';
+        event.stopPropagation();
     })
 })
 
@@ -62,6 +63,7 @@ twoHeaders.forEach(function(element) {
     element.addEventListener('wheel', function(event) {
         event.target.style.color = 'pink';
         event.target.style.transition = '2s'
+        event.stopPropagation();
     })
 })
 
