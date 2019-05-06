@@ -120,3 +120,14 @@ btnsArray.forEach(function(element) {
         event.target.style.transition = '2s'
     })
 })
+
+let buttons = document.querySelectorAll('.btn');
+
+buttons.addEventListener('mouseenter', function(event) {
+ event.target.style.color = 'orange';
+ setTimeout(function() {
+   event.target.style.color = '';
+ }, 500);
+}, false);
+
+console.log(buttons);
